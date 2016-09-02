@@ -1,0 +1,12 @@
+import urllib2
+import json
+data = json.load(urllib2.urlopen("http://api.wunderground.com/api/7266aad9911c778e/conditions/q/TX/Dallas.json"))
+print data ['current_observation']
+myObservation = data['current_observation']
+myWeather = myObservation['weather']
+mydisplay_location = myObservation['display_location']
+mydisplay_location['city']
+#print myWeather
+#print mydisplay_location['city']
+it = iter(myObservation)
+print next(it)

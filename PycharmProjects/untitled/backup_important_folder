@@ -1,0 +1,14 @@
+import os
+import time
+dir_source = '/Users/dwai1714/testprogram'
+backup_dir = '/Users/dwai1714/bkup'
+
+x= 'cd '+ dir_source
+os.system(x)
+print x
+print os.path
+os.system('ls')
+
+os.chdir(dir_source)
+os.system('ls')
+os.system('zip -r test.zip . -i testprogram')

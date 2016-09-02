@@ -1,0 +1,8 @@
+def say_hello(my_text):
+    if str(my_text)=="Hello":
+        print "Cheese"
+    else:
+        print my_text
+
+
+say_hello("Hellonn")
